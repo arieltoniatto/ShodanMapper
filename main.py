@@ -1,8 +1,8 @@
 import argparse
-from shodan_mapper.api import search_shodan
-from shodan_mapper.report import generate_report
-from shodan_mapper.utils import build_query
-from shodan_mapper.interactive import interactive_query
+from src.api import search_shodan
+from src.report import generate_report
+from src.utils import build_query
+from src.interactive import interactive_query
 from pathlib import Path
 from datetime import datetime
 

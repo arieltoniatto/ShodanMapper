@@ -1,0 +1,403 @@
+[
+  {
+    "ip": "198.51.100.1",
+    "hostnames": ["router.example.com"],
+    "city": "San Francisco",
+    "region_code": "CA",
+    "area_code": 415,
+    "dma_code": 807,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "94107",
+    "latitude": 37.7697,
+    "longitude": -122.3933,
+    "org": "Example ISP",
+    "isp": "Example ISP",
+    "asn": "AS12345",
+    "last_update": "2025-08-28T12:00:00.000000",
+    "ports": [22, 80, 443],
+    "data": [
+      {
+        "port": 80,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:00:00.000000",
+        "http": {
+          "host": "router.example.com",
+          "html": "<html>Example</html>",
+          "title": "Welcome",
+          "server": "Apache/2.4.1"
+        },
+        "location": {
+          "city": "San Francisco",
+          "country_code": "US"
+        },
+        "product": "Apache httpd",
+        "version": "2.4.1",
+        "os": "Linux"
+      },
+      {
+        "port": 22,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:00:00.000000",
+        "ssh": {
+          "version": "SSH-2.0-OpenSSH_7.9"
+        },
+        "product": "OpenSSH",
+        "os": "Linux"
+      }
+    ],
+    "vulns": {
+      "CVE-2020-1234": {
+        "verified": true,
+        "references": ["https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1234"],
+        "cvss": 7.5,
+        "summary": "Example vulnerability description"
+      }
+    }
+  },
+  {
+    "ip": "198.51.100.2",
+    "hostnames": ["web.example.com"],
+    "city": "New York",
+    "region_code": "NY",
+    "area_code": 212,
+    "dma_code": 501,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "10001",
+    "latitude": 40.7128,
+    "longitude": -74.0060,
+    "org": "NYC ISP",
+    "isp": "NYC ISP",
+    "asn": "AS54321",
+    "last_update": "2025-08-28T12:10:00.000000",
+    "ports": [21, 22, 80],
+    "data": [
+      {
+        "port": 21,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:10:00.000000",
+        "ftp": {
+          "banner": "220 FTP Server ready"
+        },
+        "product": "ProFTPD",
+        "os": "Linux"
+      },
+      {
+        "port": 22,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:10:00.000000",
+        "ssh": {
+          "version": "SSH-2.0-OpenSSH_8.2"
+        },
+        "product": "OpenSSH",
+        "os": "Linux"
+      },
+      {
+        "port": 80,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:10:00.000000",
+        "http": {
+          "host": "web.example.com",
+          "html": "<html>Home</html>",
+          "title": "Home Page",
+          "server": "nginx/1.18.0"
+        },
+        "product": "nginx",
+        "version": "1.18.0",
+        "os": "Linux"
+      }
+    ],
+    "vulns": {}
+  },
+  {
+    "ip": "198.51.100.3",
+    "hostnames": ["ftp.example.net"],
+    "city": "Chicago",
+    "region_code": "IL",
+    "area_code": 312,
+    "dma_code": 602,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "60601",
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "org": "Chicago ISP",
+    "isp": "Chicago ISP",
+    "asn": "AS67890",
+    "last_update": "2025-08-28T12:20:00.000000",
+    "ports": [21],
+    "data": [
+      {
+        "port": 21,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:20:00.000000",
+        "ftp": {
+          "banner": "220 Welcome to FTP Server"
+        },
+        "product": "vsftpd",
+        "os": "Linux"
+      }
+    ],
+    "vulns": {}
+  },
+  {
+    "ip": "198.51.100.4",
+    "hostnames": ["mail.example.org"],
+    "city": "Los Angeles",
+    "region_code": "CA",
+    "area_code": 310,
+    "dma_code": 803,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "90001",
+    "latitude": 34.0522,
+    "longitude": -118.2437,
+    "org": "LA ISP",
+    "isp": "LA ISP",
+    "asn": "AS11223",
+    "last_update": "2025-08-28T12:30:00.000000",
+    "ports": [25, 443],
+    "data": [
+      {
+        "port": 25,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:30:00.000000",
+        "smtp": {
+          "banner": "220 mail.example.org ESMTP Postfix"
+        },
+        "product": "Postfix",
+        "os": "Linux"
+      },
+      {
+        "port": 443,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:30:00.000000",
+        "http": {
+          "host": "mail.example.org",
+          "html": "<html>Mail</html>",
+          "title": "Mail Server",
+          "server": "nginx/1.19.0"
+        },
+        "product": "nginx",
+        "version": "1.19.0",
+        "os": "Linux"
+      }
+    ],
+    "vulns": {}
+  },
+  {
+    "ip": "198.51.100.5",
+    "hostnames": ["vpn.example.com"],
+    "city": "Miami",
+    "region_code": "FL",
+    "area_code": 305,
+    "dma_code": 528,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "33101",
+    "latitude": 25.7617,
+    "longitude": -80.1918,
+    "org": "Miami ISP",
+    "isp": "Miami ISP",
+    "asn": "AS33445",
+    "last_update": "2025-08-28T12:40:00.000000",
+    "ports": [443, 1194],
+    "data": [
+      {
+        "port": 443,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:40:00.000000",
+        "http": {
+          "host": "vpn.example.com",
+          "html": "<html>VPN</html>",
+          "title": "VPN Portal",
+          "server": "nginx/1.18.0"
+        },
+        "product": "nginx",
+        "version": "1.18.0",
+        "os": "Linux"
+      },
+      {
+        "port": 1194,
+        "transport": "udp",
+        "timestamp": "2025-08-28T12:40:00.000000",
+        "openvpn": {
+          "version": "2.4.9"
+        },
+        "product": "OpenVPN",
+        "os": "Linux"
+      }
+    ],
+    "vulns": {}
+  },
+  {
+    "ip": "198.51.100.6",
+    "hostnames": ["db.example.net"],
+    "city": "Houston",
+    "region_code": "TX",
+    "area_code": 713,
+    "dma_code": 618,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "77001",
+    "latitude": 29.7604,
+    "longitude": -95.3698,
+    "org": "Houston ISP",
+    "isp": "Houston ISP",
+    "asn": "AS55667",
+    "last_update": "2025-08-28T12:50:00.000000",
+    "ports": [1433],
+    "data": [
+      {
+        "port": 1433,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T12:50:00.000000",
+        "mssql": {
+          "version": "Microsoft SQL Server 2019"
+        },
+        "product": "MSSQL",
+        "os": "Windows Server"
+      }
+    ],
+    "vulns": {}
+  },
+  {
+    "ip": "198.51.100.7",
+    "hostnames": ["printer.example.com"],
+    "city": "Seattle",
+    "region_code": "WA",
+    "area_code": 206,
+    "dma_code": 819,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "98101",
+    "latitude": 47.6062,
+    "longitude": -122.3321,
+    "org": "Seattle ISP",
+    "isp": "Seattle ISP",
+    "asn": "AS77889",
+    "last_update": "2025-08-28T13:00:00.000000",
+    "ports": [9100],
+    "data": [
+      {
+        "port": 9100,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T13:00:00.000000",
+        "jetdirect": {
+          "banner": "HP JetDirect Printer"
+        },
+        "product": "HP JetDirect",
+        "os": "Firmware 5.2"
+      }
+    ],
+    "vulns": {}
+  },
+  {
+    "ip": "198.51.100.8",
+    "hostnames": ["camera.example.net"],
+    "city": "Boston",
+    "region_code": "MA",
+    "area_code": 617,
+    "dma_code": 506,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "02108",
+    "latitude": 42.3601,
+    "longitude": -71.0589,
+    "org": "Boston ISP",
+    "isp": "Boston ISP",
+    "asn": "AS99001",
+    "last_update": "2025-08-28T13:10:00.000000",
+    "ports": [554],
+    "data": [
+      {
+        "port": 554,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T13:10:00.000000",
+        "rtsp": {
+          "banner": "RTSP Camera feed"
+        },
+        "product": "IP Camera",
+        "os": "Linux"
+      }
+    ],
+    "vulns": {}
+  },
+  {
+    "ip": "198.51.100.9",
+    "hostnames": ["iot.example.com"],
+    "city": "Denver",
+    "region_code": "CO",
+    "area_code": 303,
+    "dma_code": 751,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "80202",
+    "latitude": 39.7392,
+    "longitude": -104.9903,
+    "org": "Denver ISP",
+    "isp": "Denver ISP",
+    "asn": "AS22334",
+    "last_update": "2025-08-28T13:20:00.000000",
+    "ports": [80, 1883],
+    "data": [
+      {
+        "port": 80,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T13:20:00.000000",
+        "http": {
+          "host": "iot.example.com",
+          "html": "<html>IoT device</html>",
+          "title": "IoT Panel",
+          "server": "nginx/1.17.0"
+        },
+        "product": "nginx",
+        "version": "1.17.0",
+        "os": "Linux"
+      },
+      {
+        "port": 1883,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T13:20:00.000000",
+        "mqtt": {
+          "banner": "MQTT broker"
+        },
+        "product": "Mosquitto",
+        "os": "Linux"
+      }
+    ],
+    "vulns": {}
+  },
+  {
+    "ip": "198.51.100.10",
+    "hostnames": ["db2.example.net"],
+    "city": "Atlanta",
+    "region_code": "GA",
+    "area_code": 404,
+    "dma_code": 524,
+    "country_code": "US",
+    "country_name": "United States",
+    "postal_code": "30303",
+    "latitude": 33.7490,
+    "longitude": -84.3880,
+    "org": "Atlanta ISP",
+    "isp": "Atlanta ISP",
+    "asn": "AS44556",
+    "last_update": "2025-08-28T13:30:00.000000",
+    "ports": [3306],
+    "data": [
+      {
+        "port": 3306,
+        "transport": "tcp",
+        "timestamp": "2025-08-28T13:30:00.000000",
+        "mysql": {
+          "version": "MySQL 8.0.28"
+        },
+        "product": "MySQL",
+        "os": "Linux"
+      }
+    ],
+    "vulns": {}
+  }
+]
