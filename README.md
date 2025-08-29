@@ -9,7 +9,7 @@ Generates CSV reports and simple graphs, organized in timestamped folders for ea
 - Generates CSV + PNG reports
 - Timestamped output folders to avoid overwriting
 - Interactive or CLI mode
-- Cross-platform setup with virtual environment
+- Cross-platform (Linux, WSL, Windows, macOS)
 
 ## Requirements
 
@@ -19,38 +19,87 @@ Generates CSV reports and simple graphs, organized in timestamped folders for ea
 
 ## Setup
 
-Run the setup script to create a virtual environment, install dependencies, and create a reports folder:
+1. **Create a virtual environment**:
 
 ```bash
-python setup.py
+python -m venv venv
 ````
 
+2. **Activate the virtual environment**:
 
-## Set your Shodan API key:
-
-#### Linux / WSL / macOS
 ```bash
+# Linux / WSL / macOS
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+
+3. **Install project dependencies**:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Set your Shodan API Key**:
+
+```bash
+# Linux / WSL / macOS
 export SHODAN_API_KEY='YOUR_API_KEY'
-```
-#### Windows CMD
-```bash
+
+# Windows CMD
 setx SHODAN_API_KEY "YOUR_API_KEY"
-```
-#### Or add to .env
-```bash
+
+# Or add to .env file in project root
 SHODAN_API_KEY=YOUR_API_KEY
 ```
 
-### Usage
-Interactive mode
+---
+
+## Usage
+
+### Interactive mode
+
 ```bash
 python main.py
 ```
 
-CLI mode
+The script will prompt for search filters and automatically create a timestamped output folder in `reports/YYYYMMDD_HHMMSS/`.
+
+### CLI mode
+
 ```bash
-python main.py --country BR --limit 100 --output_dir reports/20250829_103015
+python main.py --country BR --limit 100 --output results --output_dir reports/20250829_103015
 ```
 
+Reports (CSV + PNG) are saved in the specified folder.
 
-Reports are saved in reports/YYYYMMDD_HHMMSS/ with CSV and PNG files.
+---
+
+## Project Structure
+
+```
+shodan-mapper/
+├── main.py
+├── requirements.txt
+├── .env
+├── reports/
+│   └── 20250829_103015/
+│       ├── results.csv
+│       ├── results_ports.png
+│       └── results_services.png
+├── .vscode/
+│   └── settings.json
+└── shodan_mapper/
+    ├── api.py
+    ├── report.py
+    ├── interactive.py
+    ├── utils.py
+    └── config.py
+```
+
+---
+
+## License
+
+MIT License
