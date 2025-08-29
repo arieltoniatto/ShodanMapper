@@ -23,3 +23,30 @@ Run the setup script to create a virtual environment, install dependencies, and 
 
 ```bash
 python setup.py
+````
+
+
+## Set your Shodan API key:
+
+#### Linux / WSL / macOS
+export SHODAN_API_KEY='YOUR_API_KEY'
+
+### Windows CMD
+setx SHODAN_API_KEY "YOUR_API_KEY"
+
+### Or add to .env
+SHODAN_API_KEY=YOUR_API_KEY
+
+### Usage
+Interactive mode
+```bash
+python main.py
+```
+
+CLI mode
+```bash
+python main.py --country BR --limit 100 --output_dir reports/20250829_103015
+```
+
+
+Reports are saved in reports/YYYYMMDD_HHMMSS/ with CSV and PNG files.
