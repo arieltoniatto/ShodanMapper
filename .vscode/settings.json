@@ -1,4 +1,3 @@
 {
-  "python.defaultInterpreterPath": "{venv_dir / ('Scripts' if platform.startswith('win') else 'bin') / 'python'}",
-  "python.analysis.extraPaths": ["{venv_dir / ('Lib' if platform.startswith('win') else 'lib') / f'python{sys.version_info.major}.{sys.version_info.minor}' / 'site-packages'}"]
+"python.terminal.activateEnvironment": true
 }
