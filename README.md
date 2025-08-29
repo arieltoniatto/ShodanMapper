@@ -31,13 +31,13 @@ python setup.py
 #### Linux / WSL / macOS
 export SHODAN_API_KEY='YOUR_API_KEY'
 
-### Windows CMD
+#### Windows CMD
 setx SHODAN_API_KEY "YOUR_API_KEY"
 
-### Or add to .env
+#### Or add to .env
 SHODAN_API_KEY=YOUR_API_KEY
 
-### Usage
+#### Usage
 Interactive mode
 ```bash
 python main.py
