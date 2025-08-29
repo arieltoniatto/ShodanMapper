@@ -20,39 +20,42 @@ Generates CSV reports and simple graphs, organized in timestamped folders for ea
 ## Setup
 
 1. **Create a virtual environment**:
-
-```bash
-python -m venv venv
-````
+    
+    ```bash
+    python -m venv venv
+    ````
 
 2. **Activate the virtual environment**:
 
-```bash
-# Linux / WSL / macOS
-source venv/bin/activate
 
-# Windows
-venv\Scripts\activate
-```
+    ####    Linux / WSL / macOS
+    ```bash
+    source venv/bin/activate
+    ```
+    
+   ####    Windows
+    ```bash
+    venv\Scripts\activate
+    ```
 
 3. **Install project dependencies**:
-
-```bash
-pip install -r requirements.txt
-```
+    
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 4. **Set your Shodan API Key**:
 
-```bash
-# Linux / WSL / macOS
-export SHODAN_API_KEY='YOUR_API_KEY'
-
-# Windows CMD
-setx SHODAN_API_KEY "YOUR_API_KEY"
-
-# Or add to .env file in project root
-SHODAN_API_KEY=YOUR_API_KEY
-```
+    ```bash
+    # Linux / WSL / macOS
+    export SHODAN_API_KEY='YOUR_API_KEY'
+    
+    # Windows CMD
+    setx SHODAN_API_KEY "YOUR_API_KEY"
+    
+    # Or add to .env file in project root
+    SHODAN_API_KEY=YOUR_API_KEY
+    ```
 
 ---
 
@@ -84,7 +87,7 @@ shodan-mapper/
 ├── requirements.txt
 ├── .env
 ├── reports/
-│   └── 20250829_103015/
+│   └── YYYYMMDD_HHMMSS/
 │       ├── results.csv
 │       ├── results_ports.png
 │       └── results_services.png
