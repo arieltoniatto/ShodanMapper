@@ -46,14 +46,8 @@ Generates CSV reports and simple graphs, organized in timestamped folders for ea
 
 4. **Set your Shodan API Key**:
 
-    ```bash
-    # Linux / WSL / macOS
-    export SHODAN_API_KEY='YOUR_API_KEY'
-    
-    # Windows CMD
-    setx SHODAN_API_KEY "YOUR_API_KEY"
-    
-    # Or add to .env file in project root
+    #### Add to .env file in project root
+    ```bash   
     SHODAN_API_KEY=YOUR_API_KEY
     ```
 
