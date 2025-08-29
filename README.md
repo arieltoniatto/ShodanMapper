@@ -29,15 +29,19 @@ python setup.py
 ## Set your Shodan API key:
 
 #### Linux / WSL / macOS
+```bash
 export SHODAN_API_KEY='YOUR_API_KEY'
-
+```
 #### Windows CMD
+```bash
 setx SHODAN_API_KEY "YOUR_API_KEY"
-
+```
 #### Or add to .env
+```bash
 SHODAN_API_KEY=YOUR_API_KEY
+```
 
-#### Usage
+### Usage
 Interactive mode
 ```bash
 python main.py
